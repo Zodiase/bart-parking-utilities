@@ -3,37 +3,42 @@ import request from 'request-promise-native';
 import Prompts from 'prompts';
 import { getCookieItem } from './getCookieItem';
 
-export const login = async (CSRF: string, user: User | null): Promise<User> => {
-    let username: string = '';
-    let password: string = '';
-
-    if (!user) {
-        const { value: _username } = await Prompts({
-            type: 'text',
-            name: 'value',
-            message: 'Username',
-        });
-
-        if (typeof _username === 'undefined') {
-            throw new Error('abort');
-        }
-
-        const { value: _password } = await Prompts({
-            type: 'password',
-            name: 'value',
-            message: 'Password',
-        });
-
-        if (typeof _password === 'undefined') {
-            throw new Error('abort');
-        }
-
-        username = _username;
-        password = _password;
-    } else {
-        username = user.username;
-        password = user.password;
+export const promptLogin = async (user: User | null): Promise<User> => {
+    if (user) {
+        return user;
     }
+
+    const { value: username } = await Prompts({
+        type: 'text',
+        name: 'value',
+        message: 'Username',
+    });
+
+    if (typeof username === 'undefined') {
+        throw new Error('abort');
+    }
+
+    const { value: password } = await Prompts({
+        type: 'password',
+        name: 'value',
+        message: 'Password',
+    });
+
+    if (typeof password === 'undefined') {
+        throw new Error('abort');
+    }
+
+    return {
+        username,
+        password,
+    };
+};
+
+export const login = async (CSRF: string, user: User | null): Promise<User> => {
+    const {
+        username,
+        password
+    } = await promptLogin(user);
 
     try {
         // Bart returns 302 after login, so this always throws.

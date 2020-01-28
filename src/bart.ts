@@ -1,5 +1,5 @@
 import Preferences from 'preferences';
-import { getCSRFToken } from './getCsrfToken';
+import { getCSRFToken } from './getCSRFToken';
 import { login } from './login';
 import { pickTicketType } from './pickTicketType';
 import { TicketType } from './TicketType';

@@ -24,6 +24,8 @@
         "start": "npm run build:dev-watch",
         "build:dev-watch": "tsc --watch",
         "build": "tsc",
+        "clean": "rm -rf lib",
+        "prepare": "npm run clean && npm run build",
         "test:dev-watch": "mocha --require ts-node/register --watch --watch-extensions ts,spec.ts src/**/*.spec.ts",
         "test": "mocha --require ts-node/register src/**/*.spec.ts"
     },

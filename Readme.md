@@ -1,5 +1,7 @@
 # @xch/bart-parking-utilities
 
+[![Build Status](https://travis-ci.com/Zodiase/bart-parking-utilities.svg?branch=master)](https://travis-ci.com/Zodiase/bart-parking-utilities)
+
 Utilities for buying bart parking permits.
 
 So far it can help you buy Bart daily parking permits without visiting the website yourself.

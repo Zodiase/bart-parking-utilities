@@ -4,7 +4,9 @@
 
 Utilities for buying bart parking permits.
 
-So far it can help you buy Bart daily parking permits without visiting the website yourself.
+Currently it can help you buy Bart daily parking permits without visiting the website yourself. More features are getting added.
+
+**You need to have a Select-a-Spot account first and have all necessary information added to your account. This tool currently does not allow you to provide vehicle information, mailling address or payment info.**
 
 ## Get started
 

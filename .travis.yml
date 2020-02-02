@@ -3,7 +3,7 @@ deploy:
     provider: script
     script:
         - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
-        - npm run release
+        - npm run release -- --verbose
     on:
         branch: deploy/travis-release
 env:

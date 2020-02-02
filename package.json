@@ -1,6 +1,6 @@
 {
     "name": "@xch/bart-parking-utilities",
-    "version": "1.0.0",
+    "version": "1.0.1-0",
     "description": "Utilities for buying bart parking permits.",
     "author": "Xingchen Hong",
     "license": "Apache-2.0",

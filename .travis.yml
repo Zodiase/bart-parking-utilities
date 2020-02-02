@@ -1,7 +1,7 @@
 language: node_js
 deploy:
     provider: script
-    script: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc && npm run release -- --verbose
+    script: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc && npm ci && npm run release -- --verbose
     on:
         branch: deploy/travis-release
 env:

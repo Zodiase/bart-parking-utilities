@@ -19,7 +19,7 @@ export const pickDate = async (
         message: 'Pick a date',
         // This value is manipulated by the prompt. It must be its own copy.
         initial: new Date(today),
-        mask: 'YYYY-MM-DD',
+        mask: 'YYYY-MM-DD dddd',
         validate: (date: Date) => {
             return date < today ? 'Must not be in the past' : true;
         },

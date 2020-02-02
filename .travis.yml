@@ -1,1 +1,12 @@
 language: node_js
+deploy:
+    provider: script
+    script:
+        - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+        - npm run release
+    on:
+        branch: deploy/travis-release
+env:
+    global:
+        - secure: Q7FywuUkD4GkLc7oVRbvO5aND/xoEZNk1/ZuWmyXXuRzjn6c9/o3thd9xeNAHtBKR+YZ/o4VBTq9IgB8HPrLAnznOqNXHKsd97YC5y7m0fv/4J9M8gerUsWgyseQAIPFaYq/UhNtVHi2ZlvVe1+8vjX+LUtdLMo5f0SwjL4ORH0UUQToGt49+zB3VF37d8o6RwLddVMr8WAwjMTHx2KAi4QdtiSAec8dHXiAJq3F1fuXGKBTBsEQ+MrD8ITWtEIHvJ47Ew5NZ4jFX7NhQyT6dWIh0qPYJZHW/2GUbzju8wZYSxF06BFjnF/IdqkOvNt65p79sevcUm6CrmF1dE/C3t2lgr/CC+OrrktP+rE8VUFVF5ig/ewlo0yKzlkdN6sEdkWBU0DPdrmSVOW1pfTSUEvLvOnGPVKVVtEbhoLoUSyiiSRVpH8TPZz+3NP4dIMJZPPkPMirfIYIl0bIwR9VUIPVkYDmxkaurscoDaQGNXn0iBwPX/K9UpGv/1nkhVu+lyT0I4zk+Ff2TBANuopWJkgFXnpz/6DwLNMDtimi9iIdcQ++ywih9PgCfL7VzuLo+mqQBImu0dt5dm43c/uiKnaguml8f+qWziOTYAd2XyYkrbDFpYyfHR/+O52egNL7UufysOtToHbmwRZW2TtjYyEqY7bukTUiNAmbP3/BXVI=
+        - secure: gw/9eSIAI77+RY5U6IamlwlSFI3jAJ+CHuKlEpBM7pe8oTZa8rFo/qwYj03NMSoCWOGGPjedGbyLpcFh3B2zP5jzU7f5s8NdBIrzrZYveukMO9L1cgDvDXUukLT6EdbgV/hqeOEq9/1CM4MLPfCqJqMu5PysydbZQHja3G9VzBgqANCkvq+XuZGOBiAAWgBwgw+ynImnYL50ZjhEfy/NcLln19nV1g5u5G2vOlZ1JIAzH823abWZaqde7U8lO9CRiqJfd/WQrG92OcTTasROgqg2ycXZcI+rVO91p+P3YaeSmoRo+10v7qyQWs9C8/p2ZKC/2/iw0fY8iNLEyaDzNEGarA6d1l8zaPO047jOahD8YPpDhJ8+hEtJ3GbQPQstPfH18778z7MF/3zTu1c3P0HctXvIwciAnyis6nCYHE1REkh1mcbo+WHFMBiVnDPzPm+zjCFbGCosozfviM2yERU3Al65pvy+AhqHvexVTmLJcPurCUFD3sCQoB+MBTG2NrstxlhlpXpIj4tDaHjqn+oi2+k5n1FscDT0L2mQGEvfQ+bgqC7WU1fVRgcVGATMTUBpMXLbpFTekUjqfHBD03/DaAwEs55gW/zNDILx7MlABt+sjg8M6+Shsz5Hmg+70s9ZSjxTmjZjW+ZxDvK6k5EwtqWzlXn0Y0b+dN5+Nck=

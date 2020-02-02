@@ -7,6 +7,8 @@
         "facilityname",
         "facilitytypes",
         "mainbox",
+        "npmjs",
+        "npmrc",
         "parkingtype",
         "prefs",
         "sessionid",

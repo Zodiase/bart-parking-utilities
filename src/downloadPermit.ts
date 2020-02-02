@@ -10,7 +10,7 @@ import { delayMs } from './delayMs';
 
 const FILE_DOWNLOAD_TIMEOUT = 10000;
 const DELAY_BEFORE_DOWNLOAD = 5000;
-const MAX_DOWNLOAD_RETRY = 10;
+const MAX_DOWNLOAD_RETRY = 30;
 const reservationPageUrl =
     'https://www.select-a-spot.com/bart/users/reservations/';
 

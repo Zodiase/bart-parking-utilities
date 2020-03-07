@@ -39,7 +39,7 @@
         "open": "^7.0.0",
         "preferences": "^1.0.2",
         "prompts": "^2.3.0",
-        "request": "^2.88.0",
+        "request": "^2.88.2",
         "request-promise-native": "^1.0.8",
         "tmp": "^0.1.0"
     },

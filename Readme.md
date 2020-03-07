@@ -1,6 +1,6 @@
 # @xch/bart-parking-utilities
 
-[![Build Status](https://travis-ci.com/Zodiase/bart-parking-utilities.svg?branch=master)](https://travis-ci.com/Zodiase/bart-parking-utilities) [![Greenkeeper badge](https://badges.greenkeeper.io/Zodiase/bart-parking-utilities.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.com/Zodiase/bart-parking-utilities.svg?branch=master)](https://travis-ci.com/Zodiase/bart-parking-utilities) 
 
 Utilities for buying bart parking permits.
 

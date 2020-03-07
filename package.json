@@ -60,7 +60,7 @@
         "@types/tmp": "^0.1.0",
         "babel-jest": "^25.1.0",
         "jest": "^25.1.0",
-        "release-it": "^12.4.3",
+        "release-it": "^13.0.0",
         "ts-node": "^8.6.2",
         "typescript": "^3.7.5"
     }

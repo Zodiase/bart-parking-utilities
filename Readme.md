@@ -1,6 +1,7 @@
 # @xch/bart-parking-utilities
 
-[![Build Status](https://travis-ci.com/Zodiase/bart-parking-utilities.svg?branch=master)](https://travis-ci.com/Zodiase/bart-parking-utilities) 
+[![Build Status](https://travis-ci.com/Zodiase/bart-parking-utilities.svg?branch=master)](https://travis-ci.com/Zodiase/bart-parking-utilities)
+[![Known Vulnerabilities](https://snyk.io/test/github/Zodiase/bart-parking-utilities/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Zodiase/bart-parking-utilities?targetFile=package.json)
 
 Utilities for buying bart parking permits.
 
